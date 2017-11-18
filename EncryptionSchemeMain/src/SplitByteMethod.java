@@ -8,7 +8,7 @@ public void splitBlock(ArrayList<byte[]> halfBlock)
     {
         for(int i = 0; i<halfBlock.size();i++)
         {
-            byte [] splitBytes = ByteBuffer.allocate(Byte.SIZE/4).put(halfBlock.get(i)).array();
+            byte [] splitBytes = ByteBuffer.allocate(Byte.SIZE/8).put(halfBlock.get(i)).array();
             splitBlockArray.add(splitBytes);
         }
     }
